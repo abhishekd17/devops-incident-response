@@ -1,0 +1,22 @@
+name: devops-incident-response
+description: AI SRE Agent training environment for production incident response
+author: Abhishek Kumawat
+version: "1.0.0"
+tags:
+  - openenv
+  - devops
+  - incident-response
+tasks:
+  - id: easy_oom_crash
+    name: Single Service OOM Crash
+    difficulty: easy
+  - id: medium_cascade
+    name: Cascading Dependency Failure
+    difficulty: medium
+  - id: hard_race_condition
+    name: Intermittent Race Condition
+    difficulty: hard
+interface:
+  reset: POST /reset
+  step: POST /step
+  state: GET /state
